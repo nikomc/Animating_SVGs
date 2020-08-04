@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#red-hat {
+  animation: redhat_bounce 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#red-arm {
+  animation: hat 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#third-antenna {
+  animation: robot_lever 1s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#robot-eyes {
+  animation: robot_eyes 4s ease-in-out infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes redhat_bounce {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(5%);
+  }
+}
+
+@keyframes hat {
+  from {
+    transform: translateY(0%) rotateZ(0deg);
+  }
+  to {
+    transform: translateY(10%) rotateZ(3deg);
+  }
+}
+
+@keyframes robot_lever {
+  from {
+    transform: translateY(0%) rotateZ(0deg) translateX(0%);
+  }
+  to {
+    transform: translateY(20%) rotateZ(5deg) translateX(-0.5%);
+  }
+}
+
+@keyframes robot_eyes {
+  20% {
+    stroke: white;
+    stroke-width: 10px;
+    opacity: 1;
+  }
+  40% {
+    stroke: white;
+    stroke-width: 0px;
+    opacity: 1;
+  }
+  60% {
+    stroke: white;
+    stroke-width: 20px;
+    opacity: 1;
+  }
+  70% {
+    stroke: white;
+    stroke-width: 10px;
+    opacity: 1;
+  }
+  100% {
+    stroke: white;
+    stroke-width: 0px;
+    opacity: 1;
+  }
+}
